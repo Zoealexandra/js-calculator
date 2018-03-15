@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="calculator.js"></script>
+    <title>JS Calculator</title>
+</head>
+<body>
+    <h1>JS Calculator</h1>
+    <div id='calculator'>
+        <form>
+            <input type='text' id='display' disabled>
+            <br/>
+            <input type='button' value='AC' class='keys' onclick='toScreen("ac")'>
+            <input type='button' value='CE' class='keys' onclick='backspace()'>
+            <input type='button' value='x^2' class='keys' onclick='power()'>
+            <input type='button' value='+' class='keys' onclick='toScreen("+")'>
+            <br/>
+            <input type='button' value='7' class='keys' onclick='toScreen("7")'>
+            <input type='button' value='8' class='keys' onclick='toScreen("8")'>
+            <input type='button' value='9' class='keys' onclick='toScreen("9")'>
+            <input type='button' value='-' class='keys' onclick='toScreen("-")'>
+            <br>
+            <input type='button' value='4' class='keys' onclick='toScreen("4")'>
+            <input type='button' value='5' class='keys' onclick='toScreen("5")'>
+            <input type='button' value='6' class='keys' onclick='toScreen("6")'>
+            <input type='button' value='*' class='keys' onclick='toScreen("*")'>
+            <br>
+            <input type='button' value='1' class='keys' onclick='toScreen("1")'>
+            <input type='button' value='2' class='keys' onclick='toScreen("2")'>
+            <input type='button' value='3' class='keys' onclick='toScreen("3")'>
+            <input type='button' value='/' class='keys' onclick='toScreen("/")'>
+            <br>
+            <input type='button' value='0' class='keys' onclick='toScreen("0")'>
+            <input type='button' value='.' class='keys' onclick='toScreen(".")'>
+            <input type='button' value='=' id='equal' onclick='equals()'>
+            <br>
+        </form>
+    </div>    
+</body>
+</html>
