@@ -5,20 +5,27 @@
 function toScreen(x){
   let box = document.getElementById('display');
   
-      box.value += x;
-  //if user selects c, the display value will be empty
+  //if user selects ac, the display value will be empty
   if (x === 'ac') {
       box.value = '';
+      //else if they select equals, the equation will be evaluated
+  } else if (x === '='){
+    x = box.value;
+    x = eval(x);
+    box.value = x;
+    //otherwise enter the symbol entered
+  } else {
+    box.value += x;
   }
 }
 
-//when the user selects the equals button, the string in the display box willbe evaluated
-function equals() {
+//when the user selects the equals button, the string in the display box will be evaluated
+/*function equals() {
   let box = document.getElementById('display');
   x = box.value;
   x = eval(x);
   box.value = x;
-}
+}*/
 
 //when x^2 is selected, the display screen will show the result
 function power() {
